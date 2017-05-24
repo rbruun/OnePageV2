@@ -1,0 +1,35 @@
+.contributor {
+    margin: 0px;
+    border-left: $frameborder;
+    h4 {
+        font-size: 15px;
+        padding: 10px;
+        span {
+            color: $contrastColor;
+            position: relative;
+            top: 5px;
+        }
+    }
+    img {
+        width: 300px;
+        height: auto;
+    }  
+}
+
+@media (max-width: 992px) {
+    .contributor {
+        img {
+            width: 200px;
+            height: auto;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .contributor {
+        img {
+            width: 100px;
+            height: auto;
+        }
+    }
+}

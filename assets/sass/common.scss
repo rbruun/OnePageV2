@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+$contrastColor: darkgray;
+$mainColor: black;
+$frameborder: 1px solid $contrastColor;
+
+@import 'header';
+@import 'manifesto';
+@import 'plan';
+@import 'contributor';
+@import 'sign';
+
+@font-face {
+    font-family: ModernPictograms;
+    src: url(modernpics.otf);
+}
+//* {
+//    border: 1px solid red;
+//}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.topBorder {
+    border-top: 1px solid $contrastColor;
+}
+.leftBorder {
+    border-left: 1px solid $contrastColor;
+}
+
+.col-xs-5ths,
+.col-sm-5ths,
+.col-md-5ths,
+.col-lg-5ths {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+.col-xs-5ths {
+    width: 20%;
+    float: left;
+}
+
+@media (min-width: 768px) {
+    .col-sm-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 992px) {
+    .col-md-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (min-width: 1200px) {
+    .col-lg-5ths {
+        width: 20%;
+        float: left;
+    }
+}
+
+@media (max-width: 992px) {
+    .manifestoLeft {
+        visibility: hidden;
+        height: 0px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navBar {
+        visibility: hidden;
+    }
+}

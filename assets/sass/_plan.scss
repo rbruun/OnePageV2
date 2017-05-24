@@ -1,0 +1,60 @@
+.planLeft {
+    margin: 0;
+    height: 100%;
+    vertical-align: text-bottom;
+    padding: 50px 50px 10px 50px;
+    h2 {
+        font-size: 18px;
+    }
+}
+
+.planRight {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 50px 100px 25px 100px;
+    font-size: 18px;
+    border-left: $frameborder;
+}
+
+.planDetail {
+    margin: 0;
+    height: 100px;
+    padding-left: 30px;
+    border-left: $frameborder;
+    cursor: pointer;
+    transition:height 0.5s ease;
+    h3 {
+        font-size: 18px;
+        color: black;
+        position: relative;
+        top: 30px;
+        span {
+            color: $contrastColor;
+            position: relative;
+            top: -25px;
+            left: 24px;
+        }
+    }
+}
+.planDetailExpanded {
+    height: 450px;
+    overflow: auto;
+    box-shadow: inset 1px -4px 9px -6px;
+}
+
+.planAreaCopy {
+    visibility: hidden;
+    margin-top: 0px;
+    padding-left: 15px;
+    height: 400px;
+    font-size: 15px;
+    color: $contrastColor;
+    h4 {
+        color: black;
+        font-size: 15px;
+    }
+}
+.planAreaExpanded {
+    margin-top: 100px;
+    visibility: visible;
+}
