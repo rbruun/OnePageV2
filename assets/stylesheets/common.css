@@ -10,11 +10,12 @@
 .navBar {
   display: flex;
   justify-content: flex-end;
-  width: 100%; }
+  width: 100%;
+  top: 100px;
+  position: absolute; }
 
 .navItem, .bluebg {
   position: relative;
-  top: 50px;
   margin-right: 25px;
   padding-top: 10px;
   font-size: 15px; }
@@ -31,7 +32,9 @@
 .headerTxt {
   width: 50%;
   text-align: center;
-  color: white; }
+  color: white;
+  position: absolute;
+  top: 150px; }
   .headerTxt h1 {
     font-size: 60px; }
   .headerTxt h2 {
@@ -117,7 +120,7 @@
     font-size: 18px; }
 
 .planRight {
-  background-color: #000000;
+  background-color: black;
   color: #ffffff;
   padding: 50px 100px 25px 100px;
   font-size: 18px;
@@ -156,6 +159,13 @@
   .planAreaCopy h4 {
     color: black;
     font-size: 15px; }
+  .planAreaCopy p.footNotes {
+    font-size: 12px; }
+    .planAreaCopy p.footNotes span {
+      color: black; }
+    .planAreaCopy p.footNotes a {
+      color: darkgray;
+      text-decoration: underline; }
 
 .planAreaExpanded {
   margin-top: 100px;
@@ -220,7 +230,7 @@
 .facebook {
   background-color: #3b5998;
   margin: 0px;
-  height: 75px;
+  height: 95px;
   font-size: 22px; }
   .facebook a {
     position: relative;
@@ -231,9 +241,11 @@
 
 .twitter {
   background-color: #4999ff;
-  margin: 0px;
-  height: 75px;
-  font-size: 22px; }
+  margin: 0px 0px 0px 15px;
+  height: 95px;
+  font-size: 22px;
+  border-left: 1px solid darkgray;
+  border-bottom: 1px solid darkgray; }
   .twitter a {
     position: relative;
     top: 15px;
@@ -246,7 +258,8 @@
   border-left: 1px solid darkgray;
   border-top: 1px solid darkgray;
   border-bottom: 1px solid darkgray;
-  height: 75px; }
+  height: 75px;
+  margin: 0px 0px 0px 15px; }
   .email a {
     position: relative;
     top: 15px;
@@ -261,6 +274,10 @@
 @font-face {
   font-family: ModernPictograms;
   src: url(modernpics.otf); }
+.no-gutter > [class*='col-'] {
+  padding-right: 0;
+  padding-left: 0; }
+
 body {
   font-family: 'Roboto', sans-serif; }
 
@@ -269,6 +286,11 @@ body {
 
 .leftBorder {
   border-left: 1px solid darkgray; }
+
+.row {
+  margin-top: 0px;
+  margin-bottom: 0px;
+  padding: 0px; }
 
 .col-xs-5ths,
 .col-sm-5ths,

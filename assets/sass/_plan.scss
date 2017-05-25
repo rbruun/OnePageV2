@@ -9,7 +9,7 @@
 }
 
 .planRight {
-    background-color: #000000;
+    background-color: $mainColor;
     color: #ffffff;
     padding: 50px 100px 25px 100px;
     font-size: 18px;
@@ -52,6 +52,16 @@
     h4 {
         color: black;
         font-size: 15px;
+    }
+    p.footNotes {
+        font-size: 12px;
+        span {
+            color: $mainColor;
+        }
+        a {
+            color: $contrastColor;
+            text-decoration: underline;
+        }
     }
 }
 .planAreaExpanded {

@@ -16,7 +16,10 @@ $frameborder: 1px solid $contrastColor;
 //* {
 //    border: 1px solid red;
 //}
-
+.no-gutter > [class*='col-'] {
+    padding-right:0;
+    padding-left:0;
+}
 
 body {
     font-family: 'Roboto', sans-serif;
@@ -29,6 +32,11 @@ body {
     border-left: 1px solid $contrastColor;
 }
 
+.row {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0px;
+}
 .col-xs-5ths,
 .col-sm-5ths,
 .col-md-5ths,
